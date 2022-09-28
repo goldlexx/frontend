@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e4c4294.css",
-    "main.js": "/static/js/main.13ead5be.js",
+    "main.css": "/static/css/main.1c723327.css",
+    "main.js": "/static/js/main.f10e4ae5.js",
     "static/media/Inter-Bold.woff": "/static/media/Inter-Bold.1e547cd04bfe2dae1f98.woff",
     "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.44e343ff76a98508d309.woff",
     "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.0d6f7c99e635f1fec4c9.woff",
@@ -20,11 +20,11 @@
     "static/media/arrow.svg": "/static/media/arrow.21d4a41cbd169bf0c5fe.svg",
     "static/media/form-arrow.svg": "/static/media/form-arrow.47509deac27a9af54d97.svg",
     "static/media/checkbox.svg": "/static/media/checkbox.95999c112fee9f567ab4.svg",
-    "main.8e4c4294.css.map": "/static/css/main.8e4c4294.css.map",
-    "main.13ead5be.js.map": "/static/js/main.13ead5be.js.map"
+    "main.1c723327.css.map": "/static/css/main.1c723327.css.map",
+    "main.f10e4ae5.js.map": "/static/js/main.f10e4ae5.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e4c4294.css",
-    "static/js/main.13ead5be.js"
+    "static/css/main.1c723327.css",
+    "static/js/main.f10e4ae5.js"
   ]
 }
