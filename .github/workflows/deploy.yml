@@ -1,0 +1,43 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7.0.1
+      - name: Configure Pages
+        uses: actions/configure-pages@v6.0.0
+      - name: Prepare static artifact
+        run: |
+          mkdir -p _site
+          cp -R build-mesto build-movies _site/
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Frontend snapshots</title><main><h1>Frontend build snapshots</h1><p>Static snapshots; source is maintained in separate repositories.</p><ul><li><a href="./build-mesto/">Mesto snapshot</a></li><li><a href="./build-movies/">Movies snapshot</a></li></ul></main></html>
+          EOF
+          touch _site/.nojekyll
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: _site
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v5.0.1
