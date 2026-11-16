@@ -1,10 +1,10 @@
 # Frontend build snapshots
 
-This repository stores generated static build artifacts in two folders:
+This repository publishes two generated static application snapshots with GitHub Pages:
 
-- `build-mesto/` — a compiled Mesto React interface.
-- `build-movies/` — a compiled Movies Explorer interface.
+- [Mesto snapshot](https://goldlexx.github.io/frontend/build-mesto/)
+- [Movies Explorer snapshot](https://goldlexx.github.io/frontend/build-movies/)
 
-The original editable source code is not included here, and the exact source revision for each snapshot is not recorded. Related editable project repositories include [Mesto React](https://github.com/goldlexx/mesto-react), [Mesto Full-stack](https://github.com/goldlexx/react-mesto-api-full), and [Movies Explorer frontend](https://github.com/goldlexx/movies-explorer-frontend).
+These are archived build artifacts. The editable source is maintained in separate repositories: [Mesto React](https://github.com/goldlexx/mesto-react), [Mesto Full-stack](https://github.com/goldlexx/react-mesto-api-full), and [Movies Explorer frontend](https://github.com/goldlexx/movies-explorer-frontend). The snapshots may not include later fixes from those source repositories.
 
-These files are snapshots and may not match the latest source. No live demo or build command is provided by this repository.
+The GitHub Actions workflow copies these folders to the Pages artifact and generates the landing page. This repository does not contain the original source, dependency manifests, or a reproducible build command. To change either application, update its source repository and generate a new snapshot deliberately.
