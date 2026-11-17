@@ -1,10 +1,30 @@
-# Frontend build snapshots
+<div align="center">
 
-This repository publishes two generated static application snapshots with GitHub Pages:
+# 🧱 Frontend Build Snapshots
+
+Репозиторий с опубликованными статичными снимками сборок Mesto и Movies Explorer.
+
+[![GitHub Pages](https://img.shields.io/badge/demo-GitHub%20Pages-222?logo=github)](https://goldlexx.github.io/frontend/)
+
+</div>
+
+## Демонстрация
 
 - [Mesto snapshot](https://goldlexx.github.io/frontend/build-mesto/)
 - [Movies Explorer snapshot](https://goldlexx.github.io/frontend/build-movies/)
 
-These are archived build artifacts. The editable source is maintained in separate repositories: [Mesto React](https://github.com/goldlexx/mesto-react), [Mesto Full-stack](https://github.com/goldlexx/react-mesto-api-full), and [Movies Explorer frontend](https://github.com/goldlexx/movies-explorer-frontend). The snapshots may not include later fixes from those source repositories.
+## Назначение
 
-The GitHub Actions workflow copies these folders to the Pages artifact and generates the landing page. This repository does not contain the original source, dependency manifests, or a reproducible build command. To change either application, update its source repository and generate a new snapshot deliberately.
+Это архивные build-артефакты. Редактируемый исходный код находится в репозиториях [mesto-react](https://github.com/goldlexx/mesto-react), [react-mesto-api-full](https://github.com/goldlexx/react-mesto-api-full) и [movies-explorer-frontend](https://github.com/goldlexx/movies-explorer-frontend).
+
+## Ограничения
+
+Исходники, package manifests и воспроизводимая сборка в этом репозитории не хранятся.
+
+## Технологии
+
+Опубликованные сборки React-приложений.
+
+## Лицензия
+
+Лицензия в репозитории не указана.
